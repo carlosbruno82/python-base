@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 
-"""Tabuada de multiplicação
+"""Imprime a tabuada do 1 ao 10.
 
-Tabuada do numero 1
-1
-2
-3
+---Tabuada do 1---
+    1 x 1 = 1
+    1 x 2 = 2
+    1 x 3 = 3
 ...
-------------------
+##################
 
-Tabuado do numero 2
-2
-6
-8
+---Tabuada do 2---
+    2 x 1 = 2
+    2 x 2 = 4
+    2 x 4 - 8
 ...
+##################
 """
-__version__ = "1.0.0"
+__version__ = "0.1.1"
 __author__ = "Carlos Bruno"
 __license__ = "Unlicense"
 
@@ -23,8 +24,8 @@ __license__ = "Unlicense"
 
 numeros = list(range(1, 11))
 
-for numero in numeros:
-    print("Tabuada do número", numero)
-    for outro_numero in numeros:
-        print(numero * outro_numero)
-    print("-" * 15)
+for n1 in numeros:
+    print("{:-^20}".format(f"Tabuada do {n1}"))
+    for n2 in numeros:
+        print("{:^20}".format(f"{n1} x {n2} = {n1 * n2}"))
+    print("{:^20}".format(f"{'#' * 20}"))

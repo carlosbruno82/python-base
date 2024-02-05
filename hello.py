@@ -34,4 +34,3 @@ elif current_language == "fr_FR":
     msg = "Bonjour Monde"
 
 print(msg)
-
